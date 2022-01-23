@@ -1,12 +1,14 @@
 package org.roadtosenior.springripper.quoters;
 
 import lombok.Setter;
+import org.roadtosenior.springripper.infrastructure.annotations.DeprecatedClass;
 import org.roadtosenior.springripper.infrastructure.annotations.InjectRandomInt;
 import org.roadtosenior.springripper.infrastructure.annotations.PostProxy;
 import org.roadtosenior.springripper.infrastructure.annotations.Profiling;
 
 @Setter
 @Profiling
+@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
 
   @InjectRandomInt(min = 2, max = 7)

@@ -8,6 +8,6 @@ public class SpringRipperApplication {
 
   public static void main(String[] args) {
     ApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
-//      context.getBean(Quoter.class).sayQuote();
+    context.getBean(Quoter.class).sayQuote();
   }
 }

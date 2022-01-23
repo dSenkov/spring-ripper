@@ -5,6 +5,8 @@
 
     <context:annotation-config/>
 
+    <bean class="org.roadtosenior.springripper.infrastructure.bpps.DeprecationHandlerBeanFactoryPostProcessor"/>
+
     <bean class="org.roadtosenior.springripper.infrastructure.listeners.PostProxyInvokerContextListener"/>
 
     <bean class="org.roadtosenior.springripper.infrastructure.bpps.ProfilingHandlerBeanPostProcessor"/>
